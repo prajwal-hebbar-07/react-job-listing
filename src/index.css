@@ -1,10 +1,13 @@
+/* Lato font import from google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+/* Variables declared */
 :root {
   --primary: #f6b17a;
   --secondary: #2d3250;
 }
 
+/* Initial styling setup for global elements that have common styling */
 body {
   margin: 0;
   padding: 3rem;
@@ -28,4 +31,30 @@ button {
   color: white;
   background: var(--primary);
   cursor: pointer;
+}
+
+header nav {
+  display: flex;
+  justify-content: end;
+  gap: 1.5rem;
+  max-width: 100%;
+  margin: 1.5rem auto;
+}
+
+header nav h1 {
+  margin-right: auto;
+  font-size: 2rem;
+  border-bottom: 0.2rem solid var(--primary);
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+}
+
+header nav a.active {
+  background: var(--primary);
+  color: var(--secondary);
+  font-weight: 600;
 }
