@@ -33,6 +33,7 @@ button {
   cursor: pointer;
 }
 
+/* Styling for making the items of navbar move to the end */
 header nav {
   display: flex;
   justify-content: end;
@@ -41,20 +42,56 @@ header nav {
   margin: 1.5rem auto;
 }
 
+/* To improve the styling of Navbar brand or the logo. Also to push it to the left end */
 header nav h1 {
   margin-right: auto;
   font-size: 2rem;
   border-bottom: 0.2rem solid var(--primary);
 }
 
+/* Styling for different nav elements */
 header nav a {
   text-decoration: none;
   padding: 0.5rem 0.7rem;
   border-radius: 0.5rem;
 }
 
+/* How it should look when it is clicked */
 header nav a.active {
   background: var(--primary);
   color: var(--secondary);
   font-weight: 600;
+}
+
+/* page content main div styling */
+
+main {
+  max-width: 100%;
+  margin: 3rem auto;
+}
+
+/* home page styling */
+.home-page h2 {
+  color: var(--primary);
+  font-size: 2rem;
+}
+
+.home-page .intro span {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.home-page .why-job-scout h3 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-weight: 300;
+  padding-bottom: 1.25rem;
+}
+
+.home-page .why-job-scout ul li {
+  padding: 0.8rem 0;
+}
+
+.home-page .why-job-scout ul li strong {
+  text-decoration: underline;
 }

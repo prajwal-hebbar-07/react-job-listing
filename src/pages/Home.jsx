@@ -10,6 +10,27 @@ const Home = () => {
           you covered.
         </p>
       </section>
+      <section className="why-job-scout">
+        <h3>Why Choose JobScout?</h3>
+        <ul>
+          <li>
+            <strong>Comprehensive Job Listings:</strong> Explore thousands of
+            job opportunities from various industries.
+          </li>
+          <li>
+            <strong>Personalized Recommendations:</strong> Get job suggestions
+            based on your profile and preferences.
+          </li>
+          <li>
+            <strong>Application Tracking:</strong> Keep track of your job
+            applications and their statuses in one place.
+          </li>
+          <li>
+            <strong>Career Resources:</strong> Access a wealth of resources to
+            help you succeed in your job search.
+          </li>
+        </ul>
+      </section>
     </div>
   );
 };
