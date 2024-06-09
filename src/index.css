@@ -93,7 +93,8 @@ main {
 
 .home-page .why-job-scout h3,
 .about-page h3,
-.help-layout .faq h3 {
+.help-layout .faq h3,
+.contact-us h3 {
   font-size: 1.5rem;
   color: var(--primary);
   font-weight: 300;
@@ -112,7 +113,8 @@ main {
 }
 
 .about-page p,
-.faq p {
+.faq p,
+.contact-us p {
   line-height: 1.8rem;
   margin: 1.5rem 0;
 }
@@ -130,4 +132,32 @@ main {
   border: 2px solid white;
   border-radius: 0.5rem;
   text-decoration: none;
+}
+
+/* contact-form styles */
+form {
+  margin-top: 2rem;
+}
+
+form input,
+form label span,
+form textarea {
+  display: block;
+  margin: 1rem 0;
+}
+
+form input,
+form textarea {
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  color: var(--secondary);
+}
+
+form button {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  color: var(--secondary);
+  font-weight: 600;
 }
