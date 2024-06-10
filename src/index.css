@@ -91,8 +91,7 @@ main {
 
 .home-page .intro span,
 .about-page .intro span,
-.careers-layout p span,
-.careers-error p {
+.careers-layout p span {
   color: var(--primary);
   font-weight: 700;
 }
@@ -114,7 +113,8 @@ main {
 
 .home-page .why-job-scout ul li strong,
 .about-page ul li strong,
-.faq p strong {
+.faq p strong,
+.careers-error p {
   color: var(--text-highlight);
 }
 
@@ -208,4 +208,27 @@ form button {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--text-highlight);
+}
+
+.career-details {
+  margin: 8rem auto;
+  width: 24rem;
+  height: 12rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+}
+
+.career-details p {
+  margin: 0;
+  color: var(--text-highlight);
+  font-size: 1.1rem;
+}
+
+.career-details h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
