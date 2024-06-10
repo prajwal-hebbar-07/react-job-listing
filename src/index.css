@@ -64,7 +64,9 @@ header nav a {
 /* How it should look when it is clicked */
 header nav a.active,
 .help-layout nav a.active,
-.help-layout nav a:hover {
+.help-layout nav a:hover,
+.careers-error a:hover,
+.careers-error a.active {
   background: var(--primary);
   color: var(--secondary);
   font-weight: 600;
@@ -81,14 +83,16 @@ main {
 .home-page h2,
 .about-page h2,
 .help-layout h2,
-.careers-layout h2 {
+.careers-layout h2,
+.careers-error h2 {
   color: var(--primary);
   font-size: 2rem;
 }
 
 .home-page .intro span,
 .about-page .intro span,
-.careers-layout p span {
+.careers-layout p span,
+.careers-error p {
   color: var(--primary);
   font-weight: 700;
 }
@@ -130,7 +134,8 @@ main {
   margin: 1.5rem auto;
 }
 
-.help-layout nav a {
+.help-layout nav a,
+.careers-error a {
   padding: 0.5rem 1rem;
   border: 2px solid white;
   border-radius: 0.5rem;
