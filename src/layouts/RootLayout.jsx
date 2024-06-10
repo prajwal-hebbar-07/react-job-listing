@@ -1,7 +1,13 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import Breadcrumbs from "../components/Breadcrumbs";
 
 const RootLayout = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/");
+  };
+
   return (
     <div className="root-layout">
       {/* Header which will contain navbar and breadcrumbs */}
@@ -9,7 +15,7 @@ const RootLayout = () => {
         {/* Navbar */}
         <nav>
           {/* Navbar brand or Company Name or Logo */}
-          <h1>JobScout</h1>
+          <h1 onClick={handleClick}>JobScout</h1>
           {/* Navbar links that will redirect to different pages. */}
           <NavLink to={"/"}>Home</NavLink>
           <NavLink to={"about"}>About</NavLink>
