@@ -9,9 +9,9 @@ const Breadcrumbs = () => {
     }
     currentLink += "/" + crumb;
     return (
-      <Link key={index} to={currentLink}>
-        {crumb}
-      </Link>
+      <div className="crumb" key={index}>
+        <Link to={currentLink}>{crumb}</Link>
+      </div>
     );
   });
 
